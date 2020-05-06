@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Portifólio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <!-- extra: -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <!-- fim extra -->
 
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+
+    <body>
+
+      <div id="nome">
+        <div id="upperWrap">
+          <div><h1>Míriam</h1></div> 
+        </div>
+        <div id="line"></div>
+        <div id="lowerWrap">
+        <div id="lower"><h1>Junqueira</h1></div> 
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+        <script>
+          var tl = new TimelineMax({ repeat: -1 });
+          tl.from("#line", 0.5, { scaleX: 0, transformOrigin: "right center" });
+          tl.from("#upper", 0.75, { y: 30 }, "text");
+          tl.from("#lower", 0.75, { y: -30 }, "text");
+          tl.to("#line, #upper, #lower", 1, { opacity: 0 }, "+=3");
+        
+        </script>
+        <div class="contact">
+          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://github.com/miriamjunqueira/"><i class="fab fa-github-square fa-2x"></i></a>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+
+        <div class="conatiner main">
+            <div class="col-md-12">              
+            <!-- primeiro inicio -->
+
+            <div class="container mt-5 mb-5" id="descricoes">
+              <div class="row">
+                <div class="col-md-6 offset-md-3">
+                  <!-- <h5>Breve descrição:</h5> -->
+                  <ul class="timeline">
+                    <li>
+                      <!-- <a>Atualmente:</a> -->
+                      <hr />
+                      <br />
+                      <a class="float-left">(2020)</a>
+                      <br />
+                      <br />
+                      <p>Aluna do curso de Sistemas de Informação - Pontífica Universidade Católica de Minas Gerais;
+                        <p>Pós-graduanda em Direito Digital - Faculdade CERS.</p>
+                        <br />
+                    </li>
+                    <li>
+                      <!-- <a>Especialização:</a> -->
+                      <hr />
+                      <br />
+                      <a class="float-left">  (2018-2019)</a>
+                      <br />
+                      <br />
+                      <p>Pós-graduação Latu Sensu - Direito Público com ênfase em Administração Pública - Faculdade Arnaldo.</p>
+                      <br />
+                    </li>
+                    <li>
+                      <!-- <a>Graduação:</a> -->
+                      <hr />
+                      <br />
+                      <a class="float-left">(Setembro 2011)</a>
+                      <br />
+                      <br />
+                      <p>Graduaçao em Direito - Centro Universitário Newton Paiva.</p>
+                      <br />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- termino primeiro inicio -->
+
+              <!-- Image and text -->
+
+            <footer>
+              <div col-md-12 class="rodape">
+                <section id="gallery">
+                  <div class="container">
+                    <div class="row">
+                       
+                          <div class="col-lg-4 col-xs-12 img-space">
+                        <div class="gallery">
+                             <img class="img-responsive" src="img/cactu.jpeg"/>
+                             <br />
+                          </a>  
+                        </div>
+                      </div>
+                      
+                      <div class="col-lg-4 col-xs-12 img-space">
+                        <div class="gallery">
+                             <img class="img-responsive" src="img/msg.jpeg"/>
+                             <br />
+                          </a>  
+                        </div>
+                      </div>
+                      
+                      <div class="col-lg-4 col-xs-12 img-space">
+                             <img class="img-responsive" src="img/jornal.jpg"/>
+                            <br />
+                          </a>  
+                        </div>
+                      </div>
+                      
+                      <div class="col-lg-6 col-xs-12 img-space">
+                        <div class="gallery">
+                             <img class="img-responsive" src="img/pinkPc.jpeg"/>
+                             <br />
+                             
+                          </a>  
+                        </div>
+                      </div>
+                      
+                      <div class="col-lg-6 col-xs-12 img-space">
+                        <div class="gallery">
+                             <img class="img-responsive" src="img/change.jpeg"/>
+                             <br />
+                            
+                          </a>  
+                        </div>
+                      </div>
+                    
+                    </div>
+                </section>
+                
+              </div>
+            </footer>
+          </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
+    </body>
+</html>
